@@ -1,7 +1,7 @@
-displayName = [c/3ABC7A:MrPlague's Example Custom Race]
-author = MrPlague
+displayName = [c/512888:Lord Zereph's Mythic Races]
+author = Lord Zereph
 modReferences = MrPlagueRaces
-hideCode = false
+hideCode = true
 hideResources = false
 includeSource = true
-version = 0.2.2
+version = 0.1A
