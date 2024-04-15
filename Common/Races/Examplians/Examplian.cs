@@ -10,6 +10,7 @@ using MrPlagueRaces.Common.Races;
 using MrPlagueCustomRace.Sounds;
 using System;
 using System.Linq;
+using static Terraria.ModLoader.ModContent;
 
 //this is a custom race file. It contains the code that makes up the race
 namespace MrPlagueCustomRace.Common.Races.Examplians
@@ -125,7 +126,7 @@ namespace MrPlagueCustomRace.Common.Races.Examplians
         {
             //RaceStats is a bool in MrPlagueRaces that decides whether the player's racial changes are enabled or not. Make sure to put gameplay-affecting racial changes in an 'if statement' that detects if RaceStats is true
             var modPlayer = player.GetModPlayer<MrPlagueRaces.MrPlagueRacesPlayer>();
-            if (modPlayer.RaceStats)
+            if (ModContent.GetInstance<MrPlagueRaces.MrPlagueRacesConfig>().raceStats)
             {
                 player.statLifeMax2 += (player.statLifeMax2 / 2);
                 player.lifeRegen += 4;
